@@ -19,12 +19,6 @@ app.post('/todos', (req, res) => {
   }, (e) => {
     res.status(400).send(e);
   });
-//   try {
-//     confirm.log();
-// } catch(err) {
-//     console.error(err);
-//     console.log(mongoose.Promise);
-// }
 });
 
 app.listen(3000, () => {
@@ -32,7 +26,6 @@ app.listen(3000, () => {
 });
 
 module.exports = {app};
-
 
 
 // CRUD operations - Create, Read, Update, Delete;
