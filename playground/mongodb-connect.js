@@ -1,8 +1,14 @@
 // const MongoClient = require('mongodb').MongoClient;
 const {MongoClient, ObjectID} = require('mongodb'); // identical to above code; this is destructured
 
-var obj = new ObjectID();
-console.log(obj);
+MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
+    if (err) {
+        return console.log('Unable to connect to MongoDB server');
+    }
+    console.log('Connected to MongoDB server');
+
+// var obj = new ObjectID();
+// console.log(obj);
 
 // destructuring an object
 // var user = {name: 'Joseph', age: 29};
